@@ -1,55 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vaibhav's Presentation PDFs</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      padding: 2rem;
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-      color: #2c3e50;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      max-width: 600px;
-      margin: auto;
-    }
-    li {
-      background: #fff;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    a {
-      text-decoration: none;
-      color: #007acc;
-      font-size: 1.1rem;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaibhav's Presentation PDFs</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(to right, #eef2f3, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Exactly 3 per row */
+            gap: 2rem;
+            max-width: 1400px; /* Wide layout */
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto; /* No cropping */
+            display: block;
+        }
+
+        .card a {
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+            color: #007acc;
+            font-weight: 600;
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #005a99;
+        }
+
+        /* Make it responsive */
+        @media (max-width: 1100px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <h1>📚 Vaibhav's Presentations</h1>
-  <ul>
-    <li><a href="Expense%20Tracking%20System%20Presentation.pdf" target="_blank">Expense Tracking System</a></li>
-    <li><a href="Health%20Insurance%20Premium%20Predictor%20Presentation.pdf" target="_blank">Health Insurance Premium Predictor</a></li>
-    <li><a href="Credit%20Risk%20Evaluator%20Presentation.pdf" target="_blank">Credit Risk Evaluator</a></li>
-    <li><a href="Car%20Damage%20Detector%20Presentation.pdf" target="_blank">Car Damage Detector</a></li>
-    <li><a href="Real%20Estate%20Research%20Tool%20Presentation.pdf" target="_blank">Real Estate Research Tool</a></li>
-    <li><a href="E-commerce%20Chat%20Assistant%20Presentation.pdf" target="_blank">E-commerce Chat Assistant</a></li>
-    <li><a href="Human%20Resource%20Assistant%20Tool%20Presentation.pdf" target="_blank">Human Resource Assistant Tool</a></li>
-    <li><a href="Beverage%20Price%20Prediction%20Presentation.pdf" target="_blank">Beverage Price Prediction</a></li>
-  </ul>
+
+    <header>
+        <h1>📚 Vaibhav's Presentations</h1>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <a href="Presentations/Expense Tracking System Presentation.pdf" target="_blank">
+                <img src="Thumbnails/Expense Tracking System Presentation.jpg" alt="Expense Tracking System Thumbnail">
+                Expense Tracking System
+            </a>
+        </div>
+        <div class="card">
+            <a href="Presentations/Health Insurance Premium Predictor Presentation.pdf" target="_blank">
+                <img src="Thumbnails/Health Insurance Premium Predictor Presentation.jpg"
+                    alt="Health Insurance Premium Predictor Thumbnail">
+                Health Insurance Premium Predictor
+            </a>
+        </div>
+        <div class="card">
+            <a href="Presentations/Credit Risk Evaluator Presentation.pdf" target="_blank">
+                <img src="Thumbnails/Credit Risk Evaluator Presentation.jpg" alt="Credit Risk Evaluator Thumbnail">
+                Credit Risk Evaluator
+            </a>
+        </div>
+        <div class="card">
+            <a href="Presentations/Car Damage Detector Presentation.pdf" target="_blank">
+                <img src="Thumbnails/Car Damage Detector Presentation.jpg" alt="Car Damage Detector Thumbnail">
+                Car Damage Detector
+            </a>
+        </div>
+        <div class="card">
+            <a href="Presentations/Real Estate Research Tool Presentation.pdf" target="_blank">
+                <img src="Thumbnails/Real Estate Research Tool Presentation.jpg"
+                    alt="Real Estate Research Tool Thumbnail">
+                Real Estate Research Tool
+            </a>
+        </div>
+        <div class="card">
+            <a href="Presentations/E-commerce Chat Assistant Presentation.pdf" target="_blank">
+                <img src="Thumbnails/E-commerce Chat Assistant Presentation.jpg"
+                    alt="E-commerce Chat Assistant Thumbnail">
+                E-commerce Chat Assistant
+            </a>
+        </div>
+        <div class="card">
+            <a href="Presentations/Human Resource Assistant Tool Presentation.pdf" target="_blank">
+                <img src="Thumbnails/Human Resource Assistant Tool Presentation.jpg"
+                    alt="Human Resource Assistant Tool Thumbnail">
+                Human Resource Assistant Tool
+            </a>
+        </div>
+        <div class="card">
+            <a href="Presentations/Beverage Price Prediction Presentation.pdf" target="_blank">
+                <img src="Thumbnails/Beverage Price Prediction Presentation.jpg"
+                    alt="Beverage Price Prediction Thumbnail">
+                Beverage Price Prediction
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>
