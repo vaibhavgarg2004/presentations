@@ -1,164 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vaibhav's Presentation PDFs</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: linear-gradient(to right, #e0f7fa, #f1f8ff);
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Exactly 3 per row */
-            gap: 2rem;
-            max-width: 1400px; /* Wide layout */
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .card img {
-            width: 100%;
-            height: auto; /* No cropping */
-            display: block;
-        }
-
-        .card a {
-            display: block;
-            padding: 1rem;
-            text-decoration: none;
-            color: #007acc;
-            font-weight: 600;
-            text-align: center;
-            transition: color 0.3s ease;
-        }
-
-        .card a:hover {
-            color: black;
-        }
-
-        /* Make it responsive */
-        @media (max-width: 1100px) {
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 700px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-
 <body>
 
     <header>
         <h1>📚 Vaibhav's Presentations</h1>
     </header>
 
-    <div class="grid">
-        <div class="card">
-            <a href="Presentations/Expense Tracking System Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Expense Tracking System Presentation.jpg" alt="Expense Tracking System Thumbnail">
-                Expense Tracking System
-            </a>
+    <!-- Python Projects -->
+    <section>
+        <h2 class="category-heading">🐍 Python Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <a href="Presentations/Expense Tracking System Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Expense Tracking System Presentation.jpg" alt="Expense Tracking System Thumbnail">
+                    Expense Tracking System
+                </a>
+            </div>
         </div>
-        <div class="card">
-            <a href="Presentations/Health Insurance Premium Predictor Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Health Insurance Premium Predictor Presentation.jpg"
-                    alt="Health Insurance Premium Predictor Thumbnail">
-                Health Insurance Premium Predictor
-            </a>
+    </section>
+
+    <!-- ML Projects -->
+    <section>
+        <h2 class="category-heading">📊 Machine Learning Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <a href="Presentations/Health Insurance Premium Predictor Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Health Insurance Premium Predictor Presentation.jpg"
+                        alt="Health Insurance Premium Predictor Thumbnail">
+                    Health Insurance Premium Predictor
+                </a>
+            </div>
+            <div class="card">
+                <a href="Presentations/Credit Risk Evaluator Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Credit Risk Evaluator Presentation.jpg" alt="Credit Risk Evaluator Thumbnail">
+                    Credit Risk Evaluator
+                </a>
+            </div>
+            <div class="card">
+                <a href="Presentations/Beverage Price Prediction Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Beverage Price Prediction Presentation.jpg"
+                        alt="Beverage Price Prediction Thumbnail">
+                    Beverage Price Prediction
+                </a>
+            </div>
         </div>
-        <div class="card">
-            <a href="Presentations/Credit Risk Evaluator Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Credit Risk Evaluator Presentation.jpg" alt="Credit Risk Evaluator Thumbnail">
-                Credit Risk Evaluator
-            </a>
+    </section>
+
+    <!-- DL Projects -->
+    <section>
+        <h2 class="category-heading">🧠 Deep Learning Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <a href="Presentations/Car Damage Detector Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Car Damage Detector Presentation.jpg" alt="Car Damage Detector Thumbnail">
+                    Car Damage Detector
+                </a>
+            </div>
+            <div class="card">
+                <a href="Presentations/Fruit Freshness Classifier Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Fruit Freshness Classifier Presentation.jpg"
+                        alt="Fruit Freshness Classifier Thumbnail">
+                    Fruit Freshness Classifier
+                </a>
+            </div>
         </div>
-        <div class="card">
-            <a href="Presentations/Beverage Price Prediction Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Beverage Price Prediction Presentation.jpg"
-                    alt="Beverage Price Prediction Thumbnail">
-                Beverage Price Prediction
-            </a>
+    </section>
+
+    <!-- GenAI Projects -->
+    <section>
+        <h2 class="category-heading">🤖 GenAI Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <a href="Presentations/Real Estate Research Tool Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Real Estate Research Tool Presentation.jpg"
+                        alt="Real Estate Research Tool Thumbnail">
+                    Real Estate Research Tool
+                </a>
+            </div>
+            <div class="card">
+                <a href="Presentations/E-commerce Chat Assistant Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/E-commerce Chat Assistant Presentation.jpg"
+                        alt="E-commerce Chat Assistant Thumbnail">
+                    E-commerce Chat Assistant
+                </a>
+            </div>
+            <div class="card">
+                <a href="Presentations/Healthcare QA Assistant Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Healthcare QA Assistant Presentation.jpg"
+                        alt="Healthcare QA Assistant Thumbnail">
+                    Healthcare QA Assistant
+                </a>
+            </div>
+            <div class="card">
+                <a href="Presentations/Human Resource Assistant Tool Presentation.pdf" target="_blank">
+                    <img src="Thumbnails/Human Resource Assistant Tool Presentation.jpg"
+                        alt="Human Resource Assistant Tool Thumbnail">
+                    Human Resource Assistant Tool
+                </a>
+            </div>
         </div>
-        <div class="card">
-            <a href="Presentations/Car Damage Detector Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Car Damage Detector Presentation.jpg" alt="Car Damage Detector Thumbnail">
-                Car Damage Detector
-            </a>
-        </div>
-        <div class="card">
-            <a href="Presentations/Fruit Freshness Classifier Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Fruit Freshness Classifier Presentation.jpg"
-                    alt="Fruit Freshness Classifier Thumbnail">
-                Fruit Freshness Classifier
-            </a>
-        </div>
-        <div class="card">
-            <a href="Presentations/Real Estate Research Tool Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Real Estate Research Tool Presentation.jpg"
-                    alt="Real Estate Research Tool Thumbnail">
-                Real Estate Research Tool
-            </a>
-        </div>
-        <div class="card">
-            <a href="Presentations/E-commerce Chat Assistant Presentation.pdf" target="_blank">
-                <img src="Thumbnails/E-commerce Chat Assistant Presentation.jpg"
-                    alt="E-commerce Chat Assistant Thumbnail">
-                E-commerce Chat Assistant
-            </a>
-        </div>
-        <div class="card">
-            <a href="Presentations/Healthcare QA Assistant Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Healthcare QA Assistant Presentation.jpg"
-                    alt="Healthcare QA Assistant Thumbnail">
-                Healthcare QA Assistant
-            </a>
-        </div>
-        <div class="card">
-            <a href="Presentations/Human Resource Assistant Tool Presentation.pdf" target="_blank">
-                <img src="Thumbnails/Human Resource Assistant Tool Presentation.jpg"
-                    alt="Human Resource Assistant Tool Thumbnail">
-                Human Resource Assistant Tool
-            </a>
-        </div>
-    </div>
+    </section>
 
 </body>
-</html>
